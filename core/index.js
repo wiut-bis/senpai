@@ -1,0 +1,2 @@
+require("./env");
+require("./bot");
