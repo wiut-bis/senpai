@@ -11,6 +11,9 @@
     "format:check": "prettier --check \"**/*.{js,json,md}\"\n",
     "update": "yarn update"
   },
+  "bin": {
+    "senpai": "www"
+  },
   "engines": {
     "node": ">=14.0.0",
     "npm": ">=6.14.5",
@@ -41,8 +44,5 @@
     "nodemon": "^2.0.4",
     "prettier": "^2.1.1",
     "telegraf": "^3.38.0"
-  },
-  "bin": {
-    "senpai": "www"
   }
 }
