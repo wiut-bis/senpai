@@ -24,9 +24,7 @@ exports.error_admin = Markup.inlineKeyboard([
 exports.links = async (links) => {
   const keyboard = [];
   for (let link of links) {
-    keyboard.push([
-      Markup.urlButton(link["name"], link["url"]),
-    ]);
+    keyboard.push([Markup.urlButton(link["name"], link["url"])]);
   }
   return Markup.inlineKeyboard(keyboard);
 };
