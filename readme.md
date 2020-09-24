@@ -2,7 +2,7 @@
 
 <h2 align="center">Virtual Senpai Assistant</h2>
 
-<p align="center"><a href="https://t.me/senpai_chanbot"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=heroku&message=deployed&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/></a></p>
+<p align="center"><a href="https://t.me/senpai_chanbot"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=heroku&message=deployed&logoColor=eceff4&logo=github&colorA=5412b8&colorB=cd11d4"/></a></p>
 
 <p align="center"> Elegant Group Manager for <a href="http://4bis1.chisel.uz" target="_blank">4BIS1</a> Group.</p>
 
@@ -33,4 +33,4 @@ There are tons of bots using Telegraf.js in their Telegram bot as:
 
 <p align="center">Copyright &copy; 2020 <a href="http://4bis1.chisel.uz" target="_blank">4BIS1 => Genemator Sakhib</a></p>
 
-<p align="center"><a href="https://github.com/4bis1/senpai/blob/master/license"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=CC0-1.0&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/></a></p>
+<p align="center"><a href="https://github.com/4bis1/senpai/blob/master/license"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=CC0-1.0&logoColor=eceff4&logo=github&colorA=5412b8&colorB=cd11d4"/></a></p>
