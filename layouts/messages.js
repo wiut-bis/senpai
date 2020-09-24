@@ -65,3 +65,5 @@ exports.error_admin = `<b>You don't have enough power to do that!</b>`;
 exports.invalid_query = `<b>Ehm!</b>`;
 
 exports.links = `<b>Here are 4BIS1's groups & channels:</b>`;
+
+exports.contribute = `<b>I'm so happy that you wanted to upgrade me 😁. Please, press the button below to get to my GitHub repo...</b>`;

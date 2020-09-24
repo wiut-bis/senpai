@@ -28,3 +28,8 @@ exports.links = async (links) => {
   }
   return Markup.inlineKeyboard(keyboard);
 };
+
+exports.contribute = Markup.inlineKeyboard([
+  [Markup.urlButton(`Contribute!`, `https://github.com/4bis1/senpai`)],
+  [Markup.urlButton(`Organisation`, `https://github.com/4bis1/`)],
+]);
