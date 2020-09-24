@@ -5,7 +5,12 @@ exports.start = Markup.inlineKeyboard([
 ]);
 
 exports.help = Markup.inlineKeyboard([
-  [Markup.urlButton("Update Channel", "https://t.me/joinchat/AAAAAFkWg9XgdWv0c4Qs8Q")],
+  [
+    Markup.urlButton(
+      "Update Channel",
+      "https://t.me/joinchat/AAAAAFkWg9XgdWv0c4Qs8Q"
+    ),
+  ],
 ]);
 
 exports.invalid = Markup.inlineKeyboard([
