@@ -2,7 +2,7 @@
 
 <h2 align="center">Senpai Assistant</h2>
 
-<p align="center"><a href="https://t.me/senpai_chanbot"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=Heroku&message=deployed&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/></a></p>
+<p align="center"><a href="https://t.me/senpai_chanbot"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=heroku&message=deployed&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/></a></p>
 
 <p align="center"> Elegant Group Manager for <a href="http://4bis1.chisel.uz" target="_blank">4BIS1</a> Group.</p>
 
