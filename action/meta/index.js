@@ -26,9 +26,18 @@ composer.command(`timetable`, async (ctx) => {
       text += subText;
     }
 
+    const editLink = `https://github.com/4bis1/senpai/blob/master/database/json/timetable.json`
+    const editString =
+        `\n` +
+        `<b>If you found mistake, please take consider correcting</b> <a href="${editLink}">timetable.json</a> <b>in our repository!</b>`
+
+    text += editString
+
     return text;
   };
-  await ctx.replyWithHTML(await timetable());
+  await ctx.replyWithHTML(await timetable(), {
+    disable_web_page_preview: true
+  });
 });
 
 middleware(composer);
