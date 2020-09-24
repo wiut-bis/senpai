@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-**Shown the table below indicates that those version of Node.js are supported or not. Please, make sure that your version
+**Shown the table below indicates that those versions of Node.js are supported or not. Please, make sure that your version
 of Node.js is compatible with given engine. Nevertheless, you will have run into issues while executing our program.** 
 
 | Version | Supported          |
