@@ -6,7 +6,7 @@ const { composer, middleware, bot } = require("../../core/bot");
 const consoles = require("../../layouts/consoles");
 
 cron.schedule(
-    "00 09 * * 4",
+    "50 08 * * 4",
     async () => {
         const text =
             `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
