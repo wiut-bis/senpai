@@ -10,3 +10,6 @@ of Node.js is compatible with given engine. Nevertheless, you will have run into
 | 14.x.x  | :white_check_mark: |
 | 13.x.x  | :white_check_mark: |
 | =< 12.0 | :x:                |
+
+## Preliminaries 
+We don't support 12 below versions because of modules minimal requirements.
