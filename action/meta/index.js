@@ -12,7 +12,7 @@ composer.command(`timetable`, async (ctx) => {
   const timetable = async () => {
     let text = `<b>Today's Timetable:</b>`;
 
-    for (let subject of database[currentDay]) {
+    for (let subject of database["1"]) {
       let subText =
         `\n` +
         `\n` +
