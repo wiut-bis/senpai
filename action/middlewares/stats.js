@@ -31,7 +31,7 @@ composer.command(`stats`, async (ctx) => {
   const keyboard = Markup.inlineKeyboard([
     [
       Markup.urlButton(
-        `Marks (SRS)`,
+        `Marks (SRS SBL)`,
         `https://srs.wiut.uz/My_Marks.aspx?Rubx2a6BsX3IPOwAVHKhPW7MkWTYrMbkVtDHVgSbJP%2fGUZDTbo5RfAvNndJSu9zBFYdp3KqIDMI%3d`
       ),
     ],
