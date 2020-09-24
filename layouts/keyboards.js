@@ -35,5 +35,10 @@ exports.contribute = Markup.inlineKeyboard([
 ]);
 
 exports.timetable = Markup.inlineKeyboard([
-  [Markup.urlButton(`Intranet Timetable`, `https://intranet.wiut.uz/TimeTableNew/GetLessons?classid=3AD620ED9D52D489`)]
+  [
+    Markup.urlButton(
+      `Intranet Timetable`,
+      `https://intranet.wiut.uz/TimeTableNew/GetLessons?classid=3AD620ED9D52D489`
+    ),
+  ],
 ]);

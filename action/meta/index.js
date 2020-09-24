@@ -37,6 +37,7 @@ composer.command(`timetable`, async (ctx) => {
   };
   await ctx.replyWithHTML(await timetable(), {
     disable_web_page_preview: true,
+    reply_markup: keyboard.timetable,
   });
 });
 
