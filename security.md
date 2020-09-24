@@ -8,7 +8,7 @@ of Node.js is compatible with given engine. Nevertheless, you will have run into
 | Version | Supported          |
 | ------- | ------------------ |
 | 14.x.x  | :white_check_mark: |
-| 13.x.x  | :white_check_mark: |
+| 13.x.x  | :x: |
 | =< 12.0 | :x:                |
 
 ## Preliminaries
