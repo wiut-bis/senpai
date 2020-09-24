@@ -14,7 +14,7 @@ composer.hears(/\/add (.+)/gi, async (ctx) => {
 composer.hears(/\/add/, async (ctx) => {
   await security(ctx, async () => {
     await ctx.replyWithHTML(
-        `<b>Adding temporary admins:</b>` +
+      `<b>Adding temporary admins:</b>` +
         `\n` +
         `<code>/add &lt;id&gt;</code>` +
         `\n` +
@@ -22,11 +22,11 @@ composer.hears(/\/add/, async (ctx) => {
         `<b>Example:</b>` +
         `\n` +
         `<code>/add 123456789</code>`,
-        {
-          parse_mode: "HTML",
-        }
+      {
+        parse_mode: "HTML",
+      }
     );
-  })
+  });
 });
 
 middleware(composer);
