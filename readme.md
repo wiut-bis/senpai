@@ -1,6 +1,6 @@
 <p align="center"><a href="http://4bis1.chisel.uz" target="_blank"><img height="300" width="300" src="./assets/logo.jpg"/></a></p>
 
-<h2 align="center">Senpai Assistant</h2>
+<h2 align="center">Virtual Senpai Assistant</h2>
 
 <p align="center"><a href="https://t.me/senpai_chanbot"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=heroku&message=deployed&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/></a></p>
 
