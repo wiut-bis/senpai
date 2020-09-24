@@ -11,6 +11,8 @@ exports.start =
   `\n` +
   `<code>* Get informed about upcoming classes</code>` +
   `\n` +
+  `<code>* Check your timetable for today</code>` +
+  `\n` +
   `<code>* Leave a feedback to admins</code>` +
   `\n` +
   `\n` +
@@ -29,6 +31,8 @@ exports.help = (isAdmin) => {
     `/stats - <code>check stats of user</code>` +
     `\n` +
     `/links - <code>show url links</code>` +
+    `\n` +
+    `/timetable - <code>today's timetable</code>` +
     `\n` +
     `/feedback - <code>leave a feedback to admins</code>`;
   const admin =
