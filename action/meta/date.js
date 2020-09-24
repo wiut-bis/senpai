@@ -7,7 +7,7 @@ module.exports = async () => {
     (await date.getTime()) + (await date.getTimezoneOffset()) * 60000;
 
   // time offset for Uzbekistan is +5
-  const timeOffset = 10;
+  const timeOffset = 5;
 
   // create new Date object for a different timezone using supplied its GMT offset.
   const UzbTime = await new Date(utcTime + 3600000 * timeOffset);
