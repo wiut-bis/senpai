@@ -33,3 +33,7 @@ exports.contribute = Markup.inlineKeyboard([
   [Markup.urlButton(`Contribute!`, `https://github.com/4bis1/senpai`)],
   [Markup.urlButton(`Organisation`, `https://github.com/4bis1/`)],
 ]);
+
+exports.timetable = Markup.inlineKeyboard([
+  [Markup.urlButton(`Intranet Timetable`, `https://intranet.wiut.uz/TimeTableNew/GetLessons?classid=3AD620ED9D52D489`)]
+]);
