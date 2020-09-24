@@ -32,7 +32,7 @@ composer.hears(/\/feedback/, async (ctx) => {
       `\n` +
       `<i>Example:</i>` +
       `\n` +
-      `<code>/feedback Hello dear admins. Chisel Devs team is the best!</code>`,
+      `<code>/feedback Hello dear admins. 4BIS1 group is the best!</code>`,
     {
       parse_mode: "HTML",
     }
