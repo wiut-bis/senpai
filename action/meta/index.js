@@ -21,7 +21,7 @@ composer.command(`timetable`, async (ctx) => {
         `<b>Tutor:</b> <i>${subject["tutor"]}</i> \n` +
         `<b>Time (start-end):</b> <code>${subject["start"]}-${
           subject["start"] + subject["length"]
-        }</code> \n`;
+        }</code>`;
 
       text += subText;
     }
@@ -36,7 +36,7 @@ composer.command(`timetable`, async (ctx) => {
     const editLink = `https://github.com/4bis1/senpai/blob/master/database/json/timetable.json`;
     const editString =
       `\n` +
-      `\n` +
+        `\n` +
       `<b>If you found mistake, please take consider correcting</b> <a href="${editLink}">timetable.json</a> <b>in our repository!</b>`;
 
     text += editString;
