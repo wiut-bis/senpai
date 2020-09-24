@@ -2,8 +2,11 @@
 
 ## Supported Versions
 
+Shown the table below indicates that those version of Node.js are supported or not. Please, make sure that your version
+of Node.js is compatible with given engine. Nevertheless, you will have run into issues while executing our program. 
+
 | Version | Supported          |
 | ------- | ------------------ |
 | 14.x.x  | :white_check_mark: |
 | 13.x.x  | :white_check_mark: |
-| < 12.0  | :x:                |
+| =< 12.0 | :x:                |
