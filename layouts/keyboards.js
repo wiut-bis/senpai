@@ -25,7 +25,7 @@ exports.links = async (links) => {
   const keyboard = [];
   for (let link of links) {
     keyboard.push([
-      Markup.urlButton(link["name"], `https://t.me/joinchat/` + link["url"]),
+      Markup.urlButton(link["name"], link["url"]),
     ]);
   }
   return Markup.inlineKeyboard(keyboard);

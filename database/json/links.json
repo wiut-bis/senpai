@@ -2,11 +2,15 @@
   "links": [
     {
       "name": "Telegram Group",
-      "url": "LRzsmk3kd2XrxN7NXkH-4w"
+      "url": "https://t.me/joinchat/LRzsmk3kd2XrxN7NXkH-4w"
     },
     {
       "name": "Updates Channel",
-      "url": "AAAAAFkWg9XgdWv0c4Qs8Q"
+      "url": "https://t.me/joinchat/AAAAAFkWg9XgdWv0c4Qs8Q"
+    },
+    {
+      "name": "Timetable",
+      "url": "https://intranet.wiut.uz/TimeTableNew/GetLessons?classid=3AD620ED9D52D489"
     }
   ]
 }
