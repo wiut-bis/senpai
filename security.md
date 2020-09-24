@@ -2,8 +2,8 @@
 
 ## Supported Versions
 
-Shown the table below indicates that those version of Node.js are supported or not. Please, make sure that your version
-of Node.js is compatible with given engine. Nevertheless, you will have run into issues while executing our program. 
+**Shown the table below indicates that those version of Node.js are supported or not. Please, make sure that your version
+of Node.js is compatible with given engine. Nevertheless, you will have run into issues while executing our program.** 
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -12,4 +12,4 @@ of Node.js is compatible with given engine. Nevertheless, you will have run into
 | =< 12.0 | :x:                |
 
 ## Preliminaries 
-We don't support 12 below versions because of modules minimal requirements.
+**We don't support 12 below versions because of modules minimal requirements.**
