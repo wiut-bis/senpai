@@ -34,6 +34,8 @@ exports.help = (isAdmin) => {
     `\n` +
     `/timetable - <code>today's timetable</code>` +
     `\n` +
+    `/contribute - <code>enhance me more</code>` +
+    `\n` +
     `/feedback - <code>leave a feedback to admins</code>`;
   const admin =
     `\n` +
