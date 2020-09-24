@@ -13,5 +13,5 @@ module.exports = async () => {
   const UzbTime = await new Date(utcTime + 3600000 * timeOffset);
 
   // returning week date
-  return UzbTime; //.getDay();
+  return UzbTime.getDay();
 };
