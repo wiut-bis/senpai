@@ -1,4 +1,5 @@
 const { composer, middleware } = require("../../core/bot");
+const { Markup } = require("telegraf");
 
 const consoles = require("../../layouts/consoles");
 const security = require("../security");
@@ -27,6 +28,22 @@ composer.command(`stats`, async (ctx) => {
     },
   };
 
+  const keyboard = Markup.inlineKeyboard([
+    [
+      Markup.urlButton(
+        `Marks (SRS)`,
+        `https://srs.wiut.uz/My_Marks.aspx?Rubx2a6BsX3IPOwAVHKhPW7MkWTYrMbkVtDHVgSbJP%2fGUZDTbo5RfAvNndJSu9zBFYdp3KqIDMI%3d`
+      ),
+    ],
+
+    [
+      Markup.urlButton(
+        `Marks (Intranet)`,
+        `https://intranet.wiut.uz/Home/StudentProfile`
+      ),
+    ],
+  ]);
+
   await ctx.replyWithHTML(
     `<b>User status preview:</b>` +
       `\n` +
@@ -46,6 +63,7 @@ composer.command(`stats`, async (ctx) => {
       `<b>Status:</b> <code>${await status.superuser()}</code>`,
     {
       parse_mode: "HTML",
+      reply_markup: keyboard,
     }
   );
 });

@@ -6,32 +6,32 @@ const { composer, middleware, bot } = require("../../core/bot");
 const consoles = require("../../layouts/consoles");
 
 cron.schedule(
-    "50 08 * * 3",
-    async () => {
-        const text =
-            `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
-            `\n` +
-            `<b>10 minutes left</b> for <code>Computer Science Seminar</code> class. ` +
-            `Please, get ready as soon as possible! ` +
-            `You can get to the website by pressing buttons below: `;
+  "50 08 * * 3",
+  async () => {
+    const text =
+      `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
+      `\n` +
+      `<b>10 minutes left</b> for <code>Computer Science Seminar</code> class. ` +
+      `Please, get ready as soon as possible! ` +
+      `You can get to the website by pressing buttons below: `;
 
-        const keyboard = Markup.inlineKeyboard([
-            [
-                Markup.urlButton(
-                    `Video Conference`,
-                    `https://intranet.wiut.uz/LearningMaterial/Videoconference/StudentVideoconference?moduleId=559`
-                ),
-            ],
-        ]);
+    const keyboard = Markup.inlineKeyboard([
+      [
+        Markup.urlButton(
+          `Video Conference`,
+          `https://intranet.wiut.uz/LearningMaterial/Videoconference/StudentVideoconference?moduleId=559`
+        ),
+      ],
+    ]);
 
-        await bot.telegram.sendMessage(env.BIS, text, {
-            parse_mode: "HTML",
-            reply_markup: keyboard,
-        });
-    },
-    {
-        timezone: "Asia/Tashkent",
-    }
+    await bot.telegram.sendMessage(env.BIS, text, {
+      parse_mode: "HTML",
+      reply_markup: keyboard,
+    });
+  },
+  {
+    timezone: "Asia/Tashkent",
+  }
 );
 
 middleware(composer);
