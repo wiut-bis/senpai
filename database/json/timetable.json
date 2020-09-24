@@ -4,27 +4,19 @@
       "name": "Computer Science Fundamentals",
       "tutor": "Olga Yugay",
       "type": "lecture",
-      "start": 9.00,
-      "length": 1.00
+      "start": 9.0,
+      "length": 1.0
     },
     {
       "name": "Computer Science Fundamentals",
       "tutor": "Olga Yugay",
       "type": "lecture",
-      "start": 10.00,
-      "length": 1.00
+      "start": 10.0,
+      "length": 1.0
     }
   ],
-  "2": [
-
-  ],
-  "3": [
-
-  ],
-  "4": [
-
-  ],
-  "5": [
-
-  ]
+  "2": [],
+  "3": [],
+  "4": [],
+  "5": []
 }
