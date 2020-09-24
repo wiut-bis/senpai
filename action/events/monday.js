@@ -1,14 +1,67 @@
 const cron = require("node-cron");
 const env = require("../../core/env");
-const { composer, middleware } = require("../../core/bot");
+const { Markup } = require("telegraf");
+const { composer, middleware, bot } = require("../../core/bot");
 
 const consoles = require("../../layouts/consoles");
-const message = require("../../layouts/messages");
-const keyboard = require("../../layouts/keyboards");
 
-cron.schedule("* * * * 1", async () => {
-  console.log("running a task every minute");
-});
+cron.schedule(
+  "00 09 * * 1",
+  async () => {
+    const text =
+      `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
+      `\n` +
+      `<b>10 minutes left</b> for <code>Computer Science Lecture</code> class. ` +
+      `Please, get ready as soon as possible! ` +
+      `You can get to the website by pressing buttons below: `;
+
+    const keyboard = Markup.inlineKeyboard([
+      [
+        Markup.urlButton(
+          `Video Conference`,
+          `https://intranet.wiut.uz/LearningMaterial/Videoconference/StudentVideoconference?moduleId=559`
+        ),
+      ],
+    ]);
+
+    await bot.telegram.sendMessage(env.BIS, text, {
+      parse_mode: "HTML",
+      reply_markup: keyboard,
+    });
+  },
+  {
+    timezone: "Asia/Tashkent",
+  }
+);
+
+cron.schedule(
+    "00 17 * * 1",
+    async () => {
+        const text =
+            `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
+            `\n` +
+            `<b>10 minutes left</b> for <code>Introduction to Statistics and Data Science Lecture</code> class. ` +
+            `Please, get ready as soon as possible! ` +
+            `You can get to the website by pressing buttons below: `;
+
+        const keyboard = Markup.inlineKeyboard([
+            [
+                Markup.urlButton(
+                    `Video Conference`,
+                    `https://intranet.wiut.uz/LearningMaterial/Videoconference/StudentVideoconference?moduleId=556`
+                ),
+            ],
+        ]);
+
+        await bot.telegram.sendMessage(env.BIS, text, {
+            parse_mode: "HTML",
+            reply_markup: keyboard,
+        });
+    },
+    {
+        timezone: "Asia/Tashkent",
+    }
+);
 
 middleware(composer);
 consoles.module(__filename);
