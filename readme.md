@@ -1,4 +1,4 @@
-<p align="center"><a href="http://4bis1.chisel.uz" target="_blank"><img height="300" width="300" src="./assets/logo.jpg"/></a></p>
+<p align="center"><a href="http://t.me/senpai_chanbot" target="_blank"><img height="300" width="300" src="./assets/logo.jpg"/></a></p>
 
 <h2 align="center">Virtual Senpai Assistant</h2>
 
