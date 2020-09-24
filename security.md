@@ -13,4 +13,4 @@ of Node.js is compatible with given engine. Nevertheless, you will have run into
 
 ## Preliminaries
 
-**We don't support 12 below versions because of modules minimal requirements.**
+**We don't support 14 below versions because of modules minimal requirements.**
