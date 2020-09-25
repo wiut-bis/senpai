@@ -1,8 +1,9 @@
 exports.start =
-  `<b>Welcome to me's 🤗!</b>` +
+  `<b>💜 Welcome to ME 🤗!</b>` +
   `\n` +
   `\n` +
-  `I can help guide you and give more information.` +
+  `I'm just a virtual assistant created by my Father (@genemator) to help group 4BIS1 to give more information and I ` +
+  `can help guide you and give more information, notify about events and have a talk ╰(*°▽°*)╯.` +
   `\n` +
   `With my help, you can do:` +
   `\n` +
