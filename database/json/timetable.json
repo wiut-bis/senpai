@@ -8,13 +8,6 @@
       "length": 2.0
     },
     {
-      "name": "Introduction to Statistics and Data Science",
-      "tutor": "Olmas Isakov",
-      "type": "lecture",
-      "start": 17.0,
-      "length": 1.0
-    },
-    {
       "name": "Introduction to Management and Organisational Behaviour",
       "tutor": "Alisher Ismailov",
       "type": "lecture",
@@ -29,6 +22,13 @@
       "type": "seminar",
       "start": 9.0,
       "length": 2.0
+    },
+    {
+      "name": "Introduction to Statistics and Data Science",
+      "tutor": "Olmas Isakov",
+      "type": "lecture",
+      "start": 11.0,
+      "length": 1.0
     }
   ],
   "3": [
