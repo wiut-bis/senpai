@@ -35,12 +35,12 @@ cron.schedule(
 );
 
 cron.schedule(
-  "50 16 * * 1",
+  "50 17 * * 1",
   async () => {
     const text =
       `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
       `\n` +
-      `<b>10 minutes left</b> for <code>Introduction to Statistics and Data Science Lecture</code> class. ` +
+      `<b>10 minutes left</b> for <code>Introduction to Management and Organisational Beha Lecture</code> class. ` +
       `Please, get ready as soon as possible! ` +
       `You can get to the website by pressing buttons below: `;
 
@@ -48,7 +48,7 @@ cron.schedule(
       [
         Markup.urlButton(
           `Video Conference`,
-          `https://intranet.wiut.uz/LearningMaterial/Videoconference/StudentVideoconference?moduleId=556`
+          `https://intranet.wiut.uz/LearningMaterial/Videoconference/StudentVideoconference?moduleId=539`
         ),
       ],
     ]);
