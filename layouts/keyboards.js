@@ -7,7 +7,7 @@ exports.start = Markup.inlineKeyboard([
 exports.help = Markup.inlineKeyboard([
   [
     Markup.urlButton(
-      "Announcements Channel",
+      "Announcement's Channel",
       "https://t.me/joinchat/AAAAAFkWg9XgdWv0c4Qs8Q"
     ),
   ],
