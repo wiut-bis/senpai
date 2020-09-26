@@ -35,7 +35,7 @@ cron.schedule(
 );
 
 cron.schedule(
-  "50 17 * * 1",
+  "50 14 * * 1",
   async () => {
     const text =
       `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
