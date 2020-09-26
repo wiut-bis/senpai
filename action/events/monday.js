@@ -11,7 +11,7 @@ cron.schedule(
     const text =
       `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
       `\n` +
-      `<b>10 minutes left</b> for <code>Computer Science Lecture</code> class. ` +
+      `<b>10 minutes left</b> for <code>Computer Science Fundamentals Lecture</code> class. ` +
       `Please, get ready as soon as possible! ` +
       `You can get to the website by pressing buttons below: `;
 
@@ -40,7 +40,7 @@ cron.schedule(
     const text =
       `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
       `\n` +
-      `<b>10 minutes left</b> for <code>Introduction to Management and Organisational Beha Lecture</code> class. ` +
+      `<b>10 minutes left</b> for <code>Introduction to Management and Organisational Behavior Lecture</code> class. ` +
       `Please, get ready as soon as possible! ` +
       `You can get to the website by pressing buttons below: `;
 

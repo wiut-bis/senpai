@@ -11,7 +11,7 @@ cron.schedule(
     const text =
       `<b>⛓ Upcoming Class Notification ⛓</b> \n` +
       `\n` +
-      `<b>10 minutes left</b> for <code>Computer Science Seminar</code> class. ` +
+      `<b>10 minutes left</b> for <code>Computer Science Fundamentals Seminar</code> class. ` +
       `Please, get ready as soon as possible! ` +
       `You can get to the website by pressing buttons below: `;
 
