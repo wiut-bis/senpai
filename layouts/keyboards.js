@@ -42,3 +42,11 @@ exports.timetable = Markup.inlineKeyboard([
     ),
   ],
 ]);
+
+exports.chisel = Markup.inlineKeyboard([
+  [Markup.urlButton(`Web Technology`, `https://bis.chisel.uz/wt/`)],
+  [Markup.urlButton(`Computer Science Fundamentals`, `https://bis.chisel.uz/csf/`)],
+  [Markup.urlButton(`Fundamentals of Programming`, `https://bis.chisel.uz/fop/`)],
+  [Markup.urlButton(`Introduction to Statistics and Data Science`, `https://bis.chisel.uz/isds/`)],
+  [Markup.urlButton(`Introduction to Management and Organisational Behavior`, `https://bis.chisel.uz/imob/`)],
+]);
