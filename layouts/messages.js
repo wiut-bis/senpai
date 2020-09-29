@@ -33,6 +33,8 @@ exports.help = (isAdmin) => {
     `\n` +
     `/links - <code>show url links</code>` +
     `\n` +
+    `/chisel - <code>provide chisel's board</code>` +
+    `\n` +
     `/timetable - <code>today's timetable</code>` +
     `\n` +
     `/contribute - <code>enhance me more</code>` +
@@ -71,4 +73,4 @@ exports.links = `<b>Here are 4BIS1's groups & channels:</b>`;
 
 exports.contribute = `<b>I'm so happy that you wanted to upgrade me 😁. Please, press the button below to get to my GitHub repo...</b>`;
 
-exports.chisel = `<b>Choose a module from provided list below to enter Chisel's LMS board:</b>`
+exports.chisel = `<b>Choose a module from provided list below to enter Chisel's LMS board:</b>`;
