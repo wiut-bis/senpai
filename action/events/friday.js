@@ -19,7 +19,7 @@ cron.schedule(
       [
         Markup.urlButton(
           `Video Conference`,
-          `https://intranet.wiut.uz/LearningMaterial/Videoconference/StudentVideoconference?moduleId=314`
+          `https://intranet.wiut.uz/LearningMaterial/Modules/Index?moduleID=556`
         ),
       ],
     ]);
