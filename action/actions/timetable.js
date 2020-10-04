@@ -1,4 +1,4 @@
-const { composer, middleware } = require("../../core/bot");
+const { composer, middleware, markup } = require("../../core/bot");
 
 const { Markup } = require("telegraf");
 
@@ -8,9 +8,12 @@ const message = require("../../layouts/messages");
 const keyboard = require("../../layouts/keyboards");
 const database = require("../../database/db").timetable;
 
-composer.command(`timetable`, async (ctx) => {
+composer.action(`timetable`, async (ctx) => {
   const currentDay = (await date()).toString();
   const tomorrowDay = ((await date()) + 1).toString();
+  const refreshTime = await new Date(
+    new Date().getTime() + new Date().getTimezoneOffset() * 60000 + 3600000 * 5
+  );
 
   const timetable = async () => {
     let text = `<b>Today's Timetable:</b>`;
@@ -36,26 +39,33 @@ composer.command(`timetable`, async (ctx) => {
         `<b>Feel free to enjoy today, you don't have any classes!</b>`;
     }
 
+    const editTime =
+      `\n` + `\n` + `<b>Last Refresh:</b> <code>${refreshTime}</code>`;
+
     const editLink = `https://github.com/4bis1/senpai/blob/master/database/json/timetable.json`;
     const editString =
       `\n` +
       `\n` +
       `<b>If you found mistake, please take consider correcting</b> <a href="${editLink}">timetable.json</a> <b>in our repository!</b>`;
 
+    text += editTime;
     text += editString;
 
     return text;
   };
-  await ctx.replyWithHTML(await timetable(), {
+  await ctx.editMessageText(await timetable(), {
+    parse_mode: "HTML",
     disable_web_page_preview: true,
     reply_markup: Markup.inlineKeyboard([
       [Markup.callbackButton(`🔁 Refresh`, `timetable`)],
+
       [
         Markup.callbackButton(
           `Timetable for Tomorrow`,
           `tomorrow_${tomorrowDay}`
         ),
       ],
+
       [
         Markup.urlButton(
           `Intranet Timetable`,

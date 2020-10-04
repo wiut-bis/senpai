@@ -2,20 +2,18 @@ const { composer, middleware } = require("../../core/bot");
 
 const { Markup } = require("telegraf");
 
-const date = require("../../database/dt");
 const consoles = require("../../layouts/consoles");
 const message = require("../../layouts/messages");
 const keyboard = require("../../layouts/keyboards");
 const database = require("../../database/db").timetable;
 
-composer.command(`timetable`, async (ctx) => {
-  const currentDay = (await date()).toString();
-  const tomorrowDay = ((await date()) + 1).toString();
+composer.action(/tomorrow_(.+)/gi, async (ctx) => {
+  const tomorrowDay = parseInt(ctx.match[1]);
 
-  const timetable = async () => {
-    let text = `<b>Today's Timetable:</b>`;
+  const tomorrow = async () => {
+    let text = `<b>Timetable for Tomorrow:</b>`;
 
-    for (let subject of database[currentDay]) {
+    for (let subject of database[tomorrowDay]) {
       let subText =
         `\n` +
         `\n` +
@@ -29,7 +27,7 @@ composer.command(`timetable`, async (ctx) => {
       text += subText;
     }
 
-    if (database[currentDay][0] === undefined) {
+    if (database[tomorrowDay][0] === undefined) {
       text +=
         `\n` +
         `\n` +
@@ -46,16 +44,11 @@ composer.command(`timetable`, async (ctx) => {
 
     return text;
   };
-  await ctx.replyWithHTML(await timetable(), {
-    disable_web_page_preview: true,
+
+  await ctx.editMessageText(await tomorrow(), {
+    parse_mode: "HTML",
     reply_markup: Markup.inlineKeyboard([
-      [Markup.callbackButton(`🔁 Refresh`, `timetable`)],
-      [
-        Markup.callbackButton(
-          `Timetable for Tomorrow`,
-          `tomorrow_${tomorrowDay}`
-        ),
-      ],
+      [Markup.callbackButton(`◀ Back`, `timetable`)],
       [
         Markup.urlButton(
           `Intranet Timetable`,
@@ -63,6 +56,7 @@ composer.command(`timetable`, async (ctx) => {
         ),
       ],
     ]),
+    disable_web_page_preview: true,
   });
 });
 
