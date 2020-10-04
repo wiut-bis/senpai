@@ -57,7 +57,9 @@ composer.action(`timetable`, async (ctx) => {
     const editTime =
       `\n` +
       `\n` +
-      `<b>Last Refresh:</b> <code>${refreshTime} ${await identifier(5)}</code>`;
+      `<b>Last Refresh:</b> <code>${
+        refreshTime + (await identifier(5))
+      }</code>`;
 
     const editLink = `https://github.com/4bis1/senpai/blob/master/database/json/timetable.json`;
     const editString =
