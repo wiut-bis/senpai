@@ -13,7 +13,22 @@ composer.action(`timetable`, async (ctx) => {
   const tomorrowDay = ((await date()) + 1).toString();
   const refreshTime = await new Date(
     new Date().getTime() + new Date().getTimezoneOffset() * 60000 + 3600000 * 5
-  );
+  )
+    .toString()
+    .replace("GMT+0000 (Coordinated Universal Time)", "")
+    .replace("GMT+0500 (Uzbekistan Standard Time)", "");
+  const identifier = async (length) => {
+    let result = "";
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const charactersLength = characters.length;
+
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result.toUpperCase();
+  };
 
   const timetable = async () => {
     let text = `<b>Today's Timetable:</b>`;
@@ -40,7 +55,9 @@ composer.action(`timetable`, async (ctx) => {
     }
 
     const editTime =
-      `\n` + `\n` + `<b>Last Refresh:</b> <code>${refreshTime}</code>`;
+      `\n` +
+      `\n` +
+      `<b>Last Refresh:</b> <code>${refreshTime} ${await identifier(5)}</code>`;
 
     const editLink = `https://github.com/4bis1/senpai/blob/master/database/json/timetable.json`;
     const editString =
