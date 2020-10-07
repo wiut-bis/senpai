@@ -33,8 +33,6 @@ exports.help = (isAdmin) => {
 		`\n` +
 		`/links - <code>show url links</code>` +
 		`\n` +
-		`/chisel - <code>provide chisel's board</code>` +
-		`\n` +
 		`/timetable - <code>today's timetable</code>` +
 		`\n` +
 		`/contribute - <code>enhance me more</code>` +
