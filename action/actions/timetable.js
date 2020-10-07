@@ -84,14 +84,14 @@ composer.action(`timetable`, async (ctx) => {
 
 			[
 				Markup.callbackButton(
-					`Timetable for Tomorrow`,
+					`⌚ Tomorrow`,
 					`tomorrow_${tomorrowDay}`
 				),
 			],
 
 			[
 				Markup.urlButton(
-					`Intranet Timetable`,
+					`🕸 Webtable`,
 					`https://intranet.wiut.uz/TimeTableNew/GetLessons?classid=3AD620ED9D52D489`
 				),
 			],
