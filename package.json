@@ -1,7 +1,7 @@
 {
 	"name": "senpai",
 	"version": "1.0.0",
-	"description": "Telegram bot for managing 4bis1 group.",
+	"description": "Telegram bot for managing the 4bis1 group.",
 	"main": "bin/www",
 	"scripts": {
 		"start": "node bin/www",
