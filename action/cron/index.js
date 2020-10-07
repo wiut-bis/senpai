@@ -34,10 +34,8 @@ for (let day of Object.keys(database)) {
 						reply_markup: keyboard,
 					})
 					.then(async (message) => {
-						await bot.telegram.pinChatMessage(
-							env.BIS,
-							message.message_id
-						)
+						await bot.telegram
+							.pinChatMessage(env.BIS, message.message_id)
 							.catch(null);
 					});
 			},
