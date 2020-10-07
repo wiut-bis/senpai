@@ -5,15 +5,17 @@ const consoles = require("../../layouts/consoles");
 const security = require("../security");
 
 composer.command("chat", async (ctx) => {
-  await security(ctx, async () => {
-    await ctx
-      .replyWithHTML(`<b>Don't let it flop:</b> <code>${ctx.chat.id}</code>`)
-      .catch(async () => {
-        await ctx.replyWithHTML(
-          `<b>Permission not given for channel/group!</b>`
-        );
-      });
-  });
+	await security(ctx, async () => {
+		await ctx
+			.replyWithHTML(
+				`<b>Don't let it flop:</b> <code>${ctx.chat.id}</code>`
+			)
+			.catch(async () => {
+				await ctx.replyWithHTML(
+					`<b>Permission not given for channel/group!</b>`
+				);
+			});
+	});
 });
 
 middleware(composer);

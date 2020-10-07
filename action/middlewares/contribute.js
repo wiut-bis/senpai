@@ -5,10 +5,10 @@ const message = require("../../layouts/messages");
 const keyboard = require("../../layouts/keyboards");
 
 composer.command(`contribute`, async (ctx) => {
-  await ctx.replyWithHTML(message.contribute, {
-    parse_mode: "HTML",
-    reply_markup: keyboard.contribute,
-  });
+	await ctx.replyWithHTML(message.contribute, {
+		parse_mode: "HTML",
+		reply_markup: keyboard.contribute,
+	});
 });
 
 middleware(composer);

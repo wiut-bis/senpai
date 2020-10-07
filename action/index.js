@@ -1,5 +1,5 @@
 require("./admin");
 require("./actions");
 require("./middlewares");
-require("./events");
+require("./cron");
 require("./exclude");

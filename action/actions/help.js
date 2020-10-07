@@ -6,20 +6,20 @@ const keyboard = require("../../layouts/keyboards");
 const database = require("../../database/db");
 
 composer.action(`help`, async (ctx) => {
-  if (
-    database.users["eternal"].includes(ctx.from.id) ||
-    database.users["temporary"].includes(ctx.from.username)
-  ) {
-    await ctx.editMessageText(message.help(true), {
-      parse_mode: "HTML",
-      reply_markup: keyboard.help,
-    });
-  } else {
-    await ctx.editMessageText(message.help(false), {
-      parse_mode: "HTML",
-      reply_markup: keyboard.help,
-    });
-  }
+	if (
+		database.users["eternal"].includes(ctx.from.id) ||
+		database.users["temporary"].includes(ctx.from.username)
+	) {
+		await ctx.editMessageText(message.help(true), {
+			parse_mode: "HTML",
+			reply_markup: keyboard.help,
+		});
+	} else {
+		await ctx.editMessageText(message.help(false), {
+			parse_mode: "HTML",
+			reply_markup: keyboard.help,
+		});
+	}
 });
 
 middleware(composer);
