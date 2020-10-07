@@ -15,7 +15,7 @@ for (let day of Object.keys(database)) {
 				const text =
 					`<b>⛓ Upcoming Class Notification ⛓</b> \n` +
 					`\n` +
-					`<b>10 minutes left</b> for <code>${subject["name"]} ${subject["type"]}</code> class. ` +
+					`⚠ <b>10 minutes left</b> for <code>${subject["name"]} ${subject["type"]}</code> class. ` +
 					`Please, get ready as soon as possible! ` +
 					`You can get to the website by pressing buttons below: `;
 
