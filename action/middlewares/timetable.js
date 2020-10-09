@@ -50,12 +50,7 @@ composer.command(`timetable`, async (ctx) => {
 		disable_web_page_preview: true,
 		reply_markup: Markup.inlineKeyboard([
 			[Markup.callbackButton(`🔁 Refresh`, `timetable`)],
-			[
-				Markup.callbackButton(
-					`⌚ Tomorrow`,
-					`tomorrow_${tomorrowDay}`
-				),
-			],
+			[Markup.callbackButton(`⌚ Tomorrow`, `tomorrow_${tomorrowDay}`)],
 			[
 				Markup.urlButton(
 					`🕸 Webtable`,

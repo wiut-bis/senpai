@@ -82,12 +82,7 @@ composer.action(`timetable`, async (ctx) => {
 		reply_markup: Markup.inlineKeyboard([
 			[Markup.callbackButton(`🔁 Refresh`, `timetable`)],
 
-			[
-				Markup.callbackButton(
-					`⌚ Tomorrow`,
-					`tomorrow_${tomorrowDay}`
-				),
-			],
+			[Markup.callbackButton(`⌚ Tomorrow`, `tomorrow_${tomorrowDay}`)],
 
 			[
 				Markup.urlButton(
