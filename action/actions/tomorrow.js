@@ -51,7 +51,7 @@ composer.action(/tomorrow_(.+)/gi, async (ctx) => {
 			[Markup.callbackButton(`◀ Back`, `timetable`)],
 			[
 				Markup.urlButton(
-					`Intranet Timetable`,
+					`🕸 Webtable`,
 					`https://intranet.wiut.uz/TimeTableNew/GetLessons?classid=3AD620ED9D52D489`
 				),
 			],

@@ -36,11 +36,11 @@
 	},
 	"homepage": "https://github.com/4bis1/senpai#readme",
 	"dependencies": {
-		"axios": "^0.19.2",
+		"axios": "0.20.0",
 		"bad-words": "^3.0.3",
 		"colors": "^1.4.0",
 		"dotenv": "^8.2.0",
-		"is-reachable": "^4.0.0",
+		"is-reachable": "^5.0.0",
 		"node-cron": "^2.0.3",
 		"nodemon": "^2.0.4",
 		"prettier": "^2.1.1",
