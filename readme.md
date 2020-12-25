@@ -1,6 +1,6 @@
 <p align="center"><a href="http://t.me/senpai_chanbot" target="_blank"><img height="300" width="300" src="./assets/logo.jpg"/></a></p>
 
-<h2 align="center">Virtual Senpai Assistant</h2>
+<h2 align="center">Virtual Senpai Assistant (R.I.P)</h2>
 
 <p align="center"><a href="https://t.me/senpai_chanbot"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=heroku&message=deployed&logoColor=eceff4&logo=github&colorA=5412b8&colorB=cd11d4"/></a></p>
 
